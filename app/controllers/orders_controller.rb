@@ -1,5 +1,5 @@
 class OrdersController < ApplicationController
-
+  before_filter :authorize
   def show
     @order = Order.includes(line_items: [:product]).find(params[:id])
   end

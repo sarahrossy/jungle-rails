@@ -1,0 +1,16 @@
+<h1>Welcome to the Jungle!</h1>
+<br>
+<%= form_for :user, url: '/users' do |f| %>
+
+  First Name: <%= f.text_field :first_name %>
+  Last Name: <%= f.text_field :last_name %>
+  <br><br>
+  Email: <%= f.text_field :email %>
+  <br><br>
+  Password: <%= f.password_field :password %>
+  <br><br>
+  Confirm password: <%= f.password_field :password_confirmation %>
+  <br><br>
+  <%= f.submit "SUBMIT" %>
+
+<% end %>
