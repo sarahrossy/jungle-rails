@@ -1,5 +1,7 @@
 require 'rails_helper'
 
+# generated this file with the 
+
 RSpec.describe Product, type: :model do
   before do
     @category = Category.new(
